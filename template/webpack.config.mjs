@@ -258,7 +258,31 @@ export default env => {
             ...Repack.Federated.SHARED_REACT_NATIVE,
             requiredVersion: '0.69.3',
           },
+          /**
+           * Add package shared from main bundle with lib js
+           * Example
+           */
+          // "react-native-back-android": {
+          //   singleton: true,
+          //   eager: true,
+          //   requiredVersion: "^3.1.0",
+          // },
+          /**
+           * Add package shared from main bundle with lib native
+           * Example
+           */
+          // "react-native-video": {
+          //   ...Repack.Federated.SHARED_REACT_NATIVE,
+          //   eager: true, // true if dont need build module
+          //   requiredVersion: "^5.2.1",
+          // },
         },
+        /**
+         * connect with more app
+         */
+        // remotes: {
+        //   app1: "app1@dynamic",
+        // },
       }),
     ],
   }
