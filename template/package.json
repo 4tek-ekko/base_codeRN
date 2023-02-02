@@ -3,9 +3,9 @@
     "version": "0.0.1",
     "private": true,
     "scripts": {
-      "android": "react-native run-android",
-      "ios": "react-native run-ios --port 8082",
-      "start": "react-native webpack-start --port 8082",
+      "android": "react-native run-android --port 8081",
+      "ios": "react-native run-ios --port 8081",
+      "start": "react-native webpack-start --port 8081",
       "test": "jest",
       "lint": "eslint .",
       "webpack-android": "npx webpack -c webpack.config.mjs --env platform=android --env mode=production",
