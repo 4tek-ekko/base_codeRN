@@ -18,21 +18,22 @@
 #### Start server
 
 ```
-1. cd [project]
+1. cd [ProjectName]
+2. yarn && yarn pod
 2. yarn start
 ```
 
 #### Run debug ios
 
 ```
-1. cd [project]
+1. cd [ProjectName]
 2. yarn ios
 ```
 
 #### Run debug android
 
 ```
-1. cd [project]
+1. cd [ProjectName]
 2. yarn android
 ```
 
@@ -40,16 +41,16 @@
 #### From the command line:
 1. Android
 ```
-1. cd [project]
+1. cd [ProjectName]
 2. yarn build-android
 ```
-The release bundle for your app is created at [project]/build/outputs/android/remotes/.
-File bundle upload to supper app are [project].container.bundle and src-[project]_js.chunk.bundle
+The release bundle for your app is created at [ProjectName]/build/outputs/android/remotes/.
+File bundle upload to supper app are [ProjectName].container.bundle and src-[ProjectName]_js.chunk.bundle
 
 2. Ios
 ```
 1. cd [project]
 2. yarn build-ios
 ```
-The release bundle for your app is created at [project]/build/outputs/ios/remotes/.
-File bundle upload to supper app are [project].container.bundle and src-[project]_js.chunk.bundle
+The release bundle for your app is created at [ProjectName]/build/outputs/ios/remotes/.
+File bundle upload to supper app are [ProjectName].container.bundle and src-[ProjectName]_js.chunk.bundle
