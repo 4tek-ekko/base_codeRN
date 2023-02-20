@@ -7,8 +7,8 @@
     "ios": "react-native run-ios --port 8081",
     "start": "react-native webpack-start --port 8081",
     "pod": "cd ios && pod install && cd ../",
-    "webpack-android": "npx webpack -c webpack.config.mjs --env platform=android --env mode=production",
-    "webpack-ios": "npx webpack -c webpack.config.mjs --env platform=ios --env mode=production",
+    "build-android": "npx webpack -c webpack.config.mjs --env platform=android --env mode=production",
+    "build-ios": "npx webpack -c webpack.config.mjs --env platform=ios --env mode=production",
     "clean": "find ./ -type d -name 'node_modules' -exec rm -rf '{}' +"
   },
   "dependencies": {

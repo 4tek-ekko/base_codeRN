@@ -1,28 +1,31 @@
 import React, { version } from 'react'
 import { View } from 'react-native'
 
-import React, {forwardRef, useEffect, useImperativeHandle} from 'react';
-import {SupperSdk} from 'react-native-super-app-sdk';
+import React, { forwardRef, useEffect, useImperativeHandle } from 'react'
+import { SupperSdk } from 'react-native-super-app-sdk'
 
-import Main from './Screens/Main';
+import Main from './Screens/Main'
 
-const ProjectName = forwardRef(({dataSupper}, ref) => {
+/**
+ * Mini app configuration.
+ * You can develop mini app in ./Screens/Main.
+ */
+const ProjectName = forwardRef(({ dataSupper }, ref) => {
   useImperativeHandle(ref, () => ({
-    // Todo function giao tiep voi Supper app
-    // Define actionID and param in sdk
+    // Do not edit
     getData: () => {
-      return 'Mini app data';
+      return 'Mini app data'
     },
-  }));
+  }))
   useEffect(() => {
     SupperSdk.init(dataSupper, data => {
       //handle after link with supper app
-    });
+    })
     return () => {
-      SupperSdk.destroy();
-    };
-  }, [dataSupper]);
-  return <Main />;
-});
+      SupperSdk.destroy()
+    }
+  }, [dataSupper])
+  return <Main />
+})
 
-export default ProjectName;
+export default ProjectName

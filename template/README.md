@@ -13,26 +13,43 @@
 - XCode: 13.0.1 or higher
 - Android Studio: version 2021
 
-### :point_right: Getting Started
+### :point_right: Getting Started and run
 
-```sh
-yarn && yarn pod
-yarn ios # run ios
-yarn android # run android
+#### Start server
+
+```
+1. cd [project]
+2. yarn start
 ```
 
-### :rocket: CodePush & Fastlane Setup
+#### Run debug ios
 
-- CodePush:
-  - Update codepush app ids in <a href="../../../tree/develop/template/package.json">package.json</a>
-  ```
-  "codepush": {
-    "ios_app_id": "<ios_app_id>",
-    "android_app_id": "<android_app_id>",
-  },
-  ```
-  - Update `CodePushDeploymentKey` in <a href="../../../tree/develop/template/.env">.env</a>
-  - Rebuild app and run `yarn c:ios` or `yarn c:android` to update codepush
-- Fastlane:
-  - Update config information in <a href="../../../tree/develop/template/ios/fastlane/Fastfile">ios/fastlane/Fastfile</a> and <a href="../../../tree/develop/android/fastlane/Fastfile">android/fastlane/Fastfile</a>
-  - Run `yarn f:ios` or `yarn f:android` to build app to firebase app distribution
+```
+1. cd [project]
+2. yarn ios
+```
+
+#### Run debug android
+
+```
+1. cd [project]
+2. yarn android
+```
+
+### :rocket: Build an app bundle
+#### From the command line:
+1. Android
+```
+1. cd [project]
+2. yarn build-android
+```
+The release bundle for your app is created at [project]/build/outputs/android/remotes/.
+File bundle upload to supper app are [project].container.bundle and src-[project]_js.chunk.bundle
+
+2. Ios
+```
+1. cd [project]
+2. yarn build-ios
+```
+The release bundle for your app is created at [project]/build/outputs/ios/remotes/.
+File bundle upload to supper app are [project].container.bundle and src-[project]_js.chunk.bundle
