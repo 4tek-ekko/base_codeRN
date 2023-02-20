@@ -247,7 +247,7 @@ export default env => {
       new Repack.plugins.ModuleFederationPlugin({
         name: 'ProjectName',
         exposes: {
-          './App': './src/App.js',
+          './App': './src/ProjectName.js',
         },
         shared: {
           react: {
