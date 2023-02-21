@@ -1,6 +1,3 @@
-import React, { version } from 'react'
-import { View } from 'react-native'
-
 import React, { forwardRef, useEffect, useImperativeHandle } from 'react'
 import { SupperSdk } from 'react-native-super-app-sdk'
 
