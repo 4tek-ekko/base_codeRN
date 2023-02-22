@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-console.log("Finished creating project");
+console.log("This is post init script");
