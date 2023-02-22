@@ -1,3 +1,5 @@
 #!/usr/bin/env node
 
-console.log("This is post init script");
+process.argv.forEach(function (val, index, array) {
+    console.log(val, index, array)
+})
