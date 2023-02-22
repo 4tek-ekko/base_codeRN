@@ -1,14 +1,8 @@
 {
-  "name": "react-native-template-mini-app",
+  "name": "react-native-test-template",
   "version": "0.0.1",
-  "description": "mini app template",
-  "scripts": {
-    "test": "exit 0"
-  },
-  "files": [
-    "template",
-    "template.config.js",
-    "script.js"
-  ],
+  "description": "React Native Template",
+  "repository": "git@github.com/4tek-ekko/base_codeRN.git",
+  "author": "4tek",
   "license": "MIT"
 }
